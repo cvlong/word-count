@@ -3,7 +3,7 @@ def wordcount_short(text_file):
 
 
     text = open(text_file)
-
+    
     word_count = {}
 
     for line in text:
@@ -27,21 +27,3 @@ def wordcount_short(text_file):
 
 
 wordcount_short("test.txt")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# def wordcount_long()

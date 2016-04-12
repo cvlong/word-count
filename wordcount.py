@@ -13,14 +13,14 @@ def wordcount_short(text_file):
         for word in line:
 
             #Adds first instance of each word to the dictionary with value 1
-            if word not in word_count:
+            if word_count.get(word,0) == 0:
                 word_count[word] = 1
 
             #Increases value count for each additional instance of word
-            elif word in word_count:
+            else:
                 word_count[word] += 1
 
-    for word, count in word_count.items():
+    for word, count in word_count.iteritems():
         print word, count
 
     text.close()
